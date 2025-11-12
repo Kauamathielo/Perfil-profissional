@@ -4,33 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contato - Kauã Cristian Campos Mathielo</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <h1>Entre em Contato</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-
   <main>
-    <!-- Formulário de contato -->
     <section>
+      <div id="mensagemConfirmacao"></div>
       <h2>Envie uma Mensagem</h2>
-      <form>
+      <form id="formContato">
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
-        <br>
 
         <label for="email">E-mail:</label>
         <input type="email" id="email" name="email" placeholder="exemplo@dominio.com" required>
-        <br>
 
         <label for="telefone">Telefone:</label>
         <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
-        <br>
 
         <label for="mensagem">Mensagem:</label>
         <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
@@ -39,26 +36,21 @@
       </form>
     </section>
 
-    <!-- Links de contato -->
     <section>
       <h2>Outros Canais</h2>
-      <p>Você também pode entrar em contato através dos links abaixo:</p>
       <a href="mailto:kauamathielo5@gmail.com">📧 E-mail: kauamathielo5@gmail.com</a><br>
-      <a href="https://www.linkedin.com/in/kau%C3%A3-mathielo-326484274/" target="_blank" rel="noopener noreferrer">💼 Linkedin</a><br>
-      <a href="https://github.com/Kauamathielo" target="_blank" rel="noopener noreferrer">🐙 GitHub</a><br>
+      <a href="https://www.linkedin.com/in/kau%C3%A3-mathielo-326484274/" target="_blank">💼 Linkedin</a><br>
+      <a href="https://github.com/Kauamathielo" target="_blank">🐙 GitHub</a><br>
       <a href="tel:+5566999181587">📞 Telefone: (66) 99918-1587</a>
     </section>
 
-    <!-- Localização -->
     <section>
       <h2>Localização</h2>
       <p>Alto Araguaia - Mato Grosso, Brasil</p>
       <iframe
         src="https://www.google.com/maps?q=Alto+Araguaia,+MT,+Brasil&output=embed"
         allowfullscreen
-        loading="lazy"
-        width="400"
-        height="300">
+        loading="lazy">
       </iframe>
     </section>
   </main>
@@ -66,5 +58,7 @@
   <footer>
     <p>&copy; 2025 - Kauã Cristian Campos Mathielo | Alto Araguaia - MT, Brasil</p>
   </footer>
+
+  <script src="js/scriptContato.js"></script>
 </body>
 </html>

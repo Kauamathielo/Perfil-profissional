@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* ======== HEADER ======== */
+header {
+  background-color: #006400;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ======== MAIN ======== */
+main {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+  border: 3px solid #006400;
+}
+
+h2 {
+  color: #006400;
+  border-bottom: 2px solid #006400;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* ======== FORM ======== */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus, textarea:focus {
+  outline-color: #006400;
+}
+
+button {
+  background-color: #006400;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* ======== MENSAGEM DE FRASE ======== */
+.mensagem {
+  text-align: center;
+  margin: 10px auto;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+  border: 2px solid #006400;
+  background-color: #eaffea;
+}
+
+/* ======== CONFIRMAÇÃO ======== */
+#mensagemConfirmacao {
+  font-size: 1.2rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #9cff9c;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#mensagemConfirmacao.visivel {
+  opacity: 1;
+  border: 1px solid green;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+  background-color: #006400;
+  color: white;
+}
